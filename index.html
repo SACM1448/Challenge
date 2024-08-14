@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Challenge Alura</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <img src="./assets/aluraoracle.png" alt="Logo de Alura Latam + Oracle" />
-    </header>
-    <main class="main">
-      <section class="seccion1">
-        <label for="texto_encrip"></label>
-        <textarea
-          id="texto_encrip"
-          name="texto"
-          spellcheck="true"
-          placeholder="Ingrese el texto aquí"
-        ></textarea>
-        <div class="info">
-          <i class="fa-regular fa-circle-question"></i>
-          <p>Solo letras Minúsculas y sin acentos</p>
-        </div>
-        <div class="botones_main">
-          <button class="izq">Encriptar</button>
-          <button class="der">Desencriptar</button>
-        </div>
-      </section>
-      <section class="seccion2">
-        <div class="texto_encriptado">
-          <img
-            src="./assets/persona.png"
-            alt="Imagen de datos no encontrados"
-          />
-          <div class="mensaje_seccion2">
-            <strong>
-              <p class="mensaje_no_encotrado">Ningún mensaje fue encontrado</p>
-            </strong>
-            <p class="mensaje_complemento" id="mensaje"></p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+  <title>Challenge Alura</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="./assets/aluraoracle.png" alt="Logo de Alura Latam + Oracle" />
+  </header>
+  <main class="main">
+    <section class="seccion1">
+      <label for="texto_encrip"></label>
+      <textarea id="texto_encrip" name="texto" spellcheck="true" placeholder="Ingrese el texto aquí"></textarea>
+      <div class="info">
+        <i class="fa-regular fa-circle-question"></i>
+        <p>Solo letras Minúsculas y sin acentos</p>
+      </div>
+      <div class="botones_main">
+        <button class="izq">Encriptar</button>
+        <button class="der">Desencriptar</button>
+      </div>
+    </section>
+    <section class="seccion2">
+      <div class="texto_encriptado">
+        <img src="./assets/persona.png" alt="Imagen de datos no encontrados" />
+        <div class="mensaje_seccion2">
+          <strong>
+            <p class="mensaje_no_encotrado">Ningún mensaje fue encontrado</p>
+          </strong>
+          <p class="mensaje_complemento" id="mensaje"></p>
         </div>
         <div class="btn_cop">
           <i class="fa-regular fa-copy"></i>
           <button>Copiar texto encriptado</button>
         </div>
-      </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <a href="https://github.com/SACM1448">GitHub<img src="./assets/GitHub_Logo.png" alt="Logo GitHub "></a>
-        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <a href="https://github.com/SACM1448"><strong>GitHub</strong><img src="./assets/GitHub_Logo.png"
+          alt="Logo GitHub "></a>
+    </div>
+    <div class="autor-footer">
+      <i class="fa-solid fa-user"></i>
+      <strong>
         <p>Desarrollado por Sergio Cantor</p>
-        <div class="footer">
-            <a href="https://www.linkedin.com/in/sergio-cantor-b48b81272/">LinkedIn<img src="./assets/linkedin-logo.webp" alt="Logo LinkedIn"></a>
-        </div>
-    </footer>
+      </strong>
+      <i class="fa-solid fa-pen"></i>
+    </div>
+    <div class="footer">
+      <a href="https://www.linkedin.com/in/sergio-cantor-b48b81272/"><strong>LinkedIn</strong><img
+          src="./assets/linkedin-logo.webp" alt="Logo LinkedIn"></a>
+    </div>
+  </footer>
 
-    <script src="./js/app.js"></script>
-    <script
-      src="https://kit.fontawesome.com/7e1e2e1204.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="./js/app.js"></script>
+  <script src="https://kit.fontawesome.com/7e1e2e1204.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
