@@ -22,8 +22,8 @@
         <p>Solo letras Minúsculas y sin acentos</p>
       </div>
       <div class="botones_main">
-        <button class="izq" onclick="capturar_Texto()">Encriptar</button>
-        <button class="der">Desencriptar</button>
+        <button class="izq" id="encriptar">Encriptar</button> 
+        <button class="der" id="desencriptar">Desencriptar</button>
       </div>
     </section>
     <section class="seccion2">
@@ -33,10 +33,11 @@
           <strong>
             <p class="mensaje_no_encotrado" id="mensaje_no_encotrado">Ningún mensaje fue encontrado</p>
           </strong>
-          <p class="mensaje_complemento" id="mensaje"></p>
+          <p class="mensaje_complemento" id="mensajeI">Ingresa el texto que desees encriptar o desencriptar</p>
+          <p class="mensaje_complemento" id="mensajeF"></p>
         </div>
         <div class="btn_cop" id="btn_cop">
-          <button><i class="fa-regular fa-copy"></i> Copiar texto encriptado</button>
+          <button><i class="fa-regular fa-copy"></i> Copiar texto </button>
         </div>
       </div>
     </section>

@@ -119,6 +119,8 @@ textarea::placeholder {
     border-radius: 32px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    margin: 0;
 }
 
 .seccion2 img {
@@ -156,6 +158,11 @@ textarea::placeholder {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
+}
+.mensaje_complemento{
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+        white-space: normal; 
 }
 
 footer {
