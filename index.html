@@ -22,22 +22,21 @@
         <p>Solo letras Minúsculas y sin acentos</p>
       </div>
       <div class="botones_main">
-        <button class="izq">Encriptar</button>
+        <button class="izq" onclick="capturar_Texto()">Encriptar</button>
         <button class="der">Desencriptar</button>
       </div>
     </section>
     <section class="seccion2">
       <div class="texto_encriptado">
-        <img src="./assets/persona.png" alt="Imagen de datos no encontrados" />
+        <img src="./assets/persona.png" alt="Imagen de datos no encontrados" id="img">
         <div class="mensaje_seccion2">
           <strong>
-            <p class="mensaje_no_encotrado">Ningún mensaje fue encontrado</p>
+            <p class="mensaje_no_encotrado" id="mensaje_no_encotrado">Ningún mensaje fue encontrado</p>
           </strong>
           <p class="mensaje_complemento" id="mensaje"></p>
         </div>
-        <div class="btn_cop">
-          <i class="fa-regular fa-copy"></i>
-          <button>Copiar texto encriptado</button>
+        <div class="btn_cop" id="btn_cop">
+          <button><i class="fa-regular fa-copy"></i> Copiar texto encriptado</button>
         </div>
       </div>
     </section>
