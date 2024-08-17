@@ -10,7 +10,7 @@ function mostrarMensaje(texto) {
 }
 function capturar_texto_dividirlo() {
   const cadena = document.getElementById("texto_encrip").value;
-  const regex = /^[a-z\s?!*%@#&]+$/
+  const regex = /^[a-z\s?!*%@#&,.\b]+$/;
   if (!regex.test(cadena)) {
     mostrarMensaje("El mensaje solo puede contener letras minúsculas y sin acentos.");
   }
@@ -46,7 +46,7 @@ function encriptar_texto() {
   );
   const cadenaCompleta = palabrasEncriptadas.join(" ");
 
-  mostrarMensaje("Mensaje encriptado: " + cadenaCompleta);
+  mostrarMensaje(cadenaCompleta);
   mostrar_btnCop_ocultar_p_img();
 }
 
@@ -65,7 +65,7 @@ function desencriptar_texto() {
   );
   const cadenaCompleta = palabrasDesencriptadas.join(" ");
 
-  mostrarMensaje("Mensaje desencriptado: " + cadenaCompleta);
+  mostrarMensaje(cadenaCompleta);
   mostrar_btnCop_ocultar_p_img();
 }
 
@@ -79,6 +79,10 @@ function mostrar_btnCop_ocultar_p_img() {
   const btn = document.getElementById("btn_cop");
   btn.style.display = "flex";
 }
+document.getElementById("copiar").addEventListener("click", function() {
+  const mensajeF = document.getElementById("mensajeF");
+  navigator.clipboard.writeText(mensajeF.textContent);
+});
 
 document.getElementById("encriptar").addEventListener("click", encriptar_texto);
 document.getElementById("desencriptar").addEventListener("click", desencriptar_texto);
